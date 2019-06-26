@@ -19,5 +19,5 @@ or
 ```./ApacheGuacamole.sh```
 
 
-#Updates:
-Add files to allow over HTTPS
+# Updates:
+* Add files to allow over HTTPS
