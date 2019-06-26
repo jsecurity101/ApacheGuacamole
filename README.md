@@ -14,9 +14,9 @@ Install Script for ApacheGuacamole.
 or
 
 
-    ```sudo chmod +x ApacheGuacamole.sh```
+    sudo chmod +x ApacheGuacamole.sh
 
-    ```./ApacheGuacamole.sh```
+    ./ApacheGuacamole.sh
 
 
 # Updates:
