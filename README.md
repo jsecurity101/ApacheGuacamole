@@ -8,17 +8,15 @@ Install Script for ApacheGuacamole.
 1. Be sure to update the <strong> user-mapping.xml </strong> to match your enviroment
 2. Run <strong>ApacheGuacamole.sh</strong>
 
-
-  ```sudo bash ApacheGuacamole.sh``` 
+    ```sudo bash ApacheGuacamole.sh``` 
 
 
 or
 
 
-  ```sudo chmod +x ApacheGuacamole.sh```
+    ```sudo chmod +x ApacheGuacamole.sh```
 
-
-  ```./ApacheGuacamole.sh```
+    ```./ApacheGuacamole.sh```
 
 
 # Updates:
