@@ -29,6 +29,8 @@ mv guacamole-0.9.9.war /var/lib/tomcat7/webapps/guacamole.war
 
 mkdir /usr/share/tomcat7/.guacamole
 
+mkdir /etc/guacamole/
+
 touch /etc/guacamole/guacamole.properties
 
 echo 'guacd-hostname: localhost' > /etc/guacamole/guacamole.properties
