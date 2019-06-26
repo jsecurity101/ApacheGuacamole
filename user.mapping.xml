@@ -1,0 +1,26 @@
+<user-mapping>
+	
+			<authorize username="guacadmin"
+                    password="5cbd438413e8e3ca0e14e200fde621a9"
+                    encoding="md5">
+
+
+			<connection name="linux">
+				<protocol>ssh</protocol>
+				<param name="hostname">ip-address</param>
+				<param name="port">22</param>
+				<param name="username">user-name</param>
+				<param name="password">password</param>
+			</connection>
+
+			<connection name="Windows">
+				<protocol>rdp</protocol>
+				<param name="hostname">ip-address</param>
+				<param name="port">3389</param>
+				<param name="username">username</param>
+				<param name="password">password</param>
+				<param name="security">nla</param>
+				<param name="ignore-cert">true</param>
+			</connection>
+
+</user-mapping>
