@@ -29,15 +29,15 @@ mkdir /usr/share/tomcat7/.guacamole
 
 touch /etc/guacamole/guacamole.properties
 
-echo 'guacd-hostname: localhost' | tee /etc/guacamole/guacamole.properties
+echo 'guacd-hostname: localhost' > /etc/guacamole/guacamole.properties
 
-echo 'gucad-port: 4822' | tee /etc/guacamole/guacamole.properties
+echo 'gucad-port: 4822' > /etc/guacamole/guacamole.properties
 
-echo 'user-mapping: /etc/guacamole/user-mapping.xml' | tee /etc/guacamole/guacamole.properties
+echo 'user-mapping: /etc/guacamole/user-mapping.xml' > /etc/guacamole/guacamole.properties
 
-echo 'auth-provider: net.sourceforge.guacamole.net.basic.BasicFileAuthentiionProvider' | tee /etc/guacamole/guacamole.properties
+echo 'auth-provider: net.sourceforge.guacamole.net.basic.BasicFileAuthentiionProvider' > /etc/guacamole/guacamole.properties
 
-echo 'basic-user-mapping: /etc/guacamole/user-mapping.xml' | tee /etc/guacamole/guacamole.properties
+echo 'basic-user-mapping: /etc/guacamole/user-mapping.xml' > /etc/guacamole/guacamole.properties
 
 
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
@@ -46,5 +46,5 @@ touch /etc/guacamole/user-mapping.xml
 
 service tomcat7 start
 
-/usr/local/sbin/guacd &
+
 
