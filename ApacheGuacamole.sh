@@ -1,3 +1,4 @@
+#Created by Jonathan Johnson
 #Only supports Ubuntu 16.04
 
 #!/bin/bash
@@ -33,16 +34,7 @@ mkdir /etc/guacamole/
 
 touch /etc/guacamole/guacamole.properties
 
-echo 'guacd-hostname: localhost' > /etc/guacamole/guacamole.properties
-
-echo 'gucad-port: 4822' > /etc/guacamole/guacamole.properties
-
-echo 'user-mapping: /etc/guacamole/user-mapping.xml' > /etc/guacamole/guacamole.properties
-
-echo 'auth-provider: net.sourceforge.guacamole.net.basic.BasicFileAuthentiionProvider' > /etc/guacamole/guacamole.properties
-
-echo 'basic-user-mapping: /etc/guacamole/user-mapping.xml' > /etc/guacamole/guacamole.properties
-
+cp guacamole-properties.xml /etc/guacamole/guacamole-properties.xml
 
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
 
@@ -50,5 +42,6 @@ cp user-mapping.xml /etc/guacamole/user-mapping.xml
 
 service tomcat7 start
 
-
+echo "Installation is complete!!"
+echo "Go to http://localhost:8080/guacamole to visit Apache Guacamole"
 
