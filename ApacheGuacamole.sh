@@ -42,6 +42,9 @@ cp user-mapping.xml /etc/guacamole/user-mapping.xml
 
 service tomcat7 start
 
+cd ../
+rm -r ApacheGuacamole/
+
 echo "Installation is complete!!"
 echo "Go to http://localhost:8080/guacamole to visit Apache Guacamole"
 
