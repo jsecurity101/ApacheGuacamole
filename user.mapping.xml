@@ -22,5 +22,5 @@
 				<param name="security">nla</param>
 				<param name="ignore-cert">true</param>
 			</connection>
-
+		</authorize>
 </user-mapping>
