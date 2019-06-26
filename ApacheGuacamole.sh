@@ -46,7 +46,7 @@ echo 'basic-user-mapping: /etc/guacamole/user-mapping.xml' > /etc/guacamole/guac
 
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
 
-touch /etc/guacamole/user-mapping.xml
+cp user-mapping.xml /etc/guacamole/user-mapping.xml
 
 service tomcat7 start
 
