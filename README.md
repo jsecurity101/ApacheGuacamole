@@ -20,4 +20,4 @@ or
 
 
 # Updates:
-* Add files to allow over HTTPS
+* Add files to allow Apache Guacamole over HTTPS
