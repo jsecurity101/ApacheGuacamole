@@ -21,6 +21,8 @@ guacamole-server-0.9.9/make
 
 guacamole-server-0.9.9/make install
 
+rm -r guacamole-server-0.9.9/
+
 wget http://sourceforge.net/projects/guacamole/files/current/binary/guacamole-0.9.9.war /var/lib/tomcat7
 
 mv guacamole-0.9.9.war /var/lib/tomcat7/webapps/guacamole.war
