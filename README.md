@@ -7,6 +7,8 @@ Note: this install script will only get Apache Guacamole to be available over HT
 
 1. Be sure to update the <strong> user-mapping.xml </strong> to match your enviroment
 2. Run <strong>ApacheGuacamole.sh</strong>
+
+
 ```sudo bash ApacheGuacamole.sh``` 
 
 
