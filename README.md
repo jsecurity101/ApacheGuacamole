@@ -1,7 +1,7 @@
 # ApacheGuacamole:
 Install Script for ApacheGuacamole. 
 
-<strong>Note:</strong> this install script will only get Apache Guacamole to be available over HTTP
+Apache Guacamole will be available over HTTPS
 
 # Instructions:
 
@@ -23,5 +23,4 @@ or
     ./ApacheGuacamole.sh
 
 
-# Updates:
-* Add files to allow Apache Guacamole over HTTPS
+
