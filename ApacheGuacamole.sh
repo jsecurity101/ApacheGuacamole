@@ -24,6 +24,8 @@ sudo make
 
 sudo make install
 
+ldconfig
+
 cd ../
 
 wget http://sourceforge.net/projects/guacamole/files/current/binary/guacamole-0.9.9.war 
