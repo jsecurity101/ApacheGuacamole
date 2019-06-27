@@ -32,9 +32,7 @@ mkdir /usr/share/tomcat7/.guacamole
 
 mkdir /etc/guacamole/
 
-touch /etc/guacamole/guacamole.properties
-
-cp guacamole-properties.xml /etc/guacamole/guacamole-properties.xml
+cp guacamole.properties /etc/guacamole/guacamole.properties
 
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
 
