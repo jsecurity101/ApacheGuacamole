@@ -3,6 +3,8 @@ Install Script for ApacheGuacamole.
 
 Apache Guacamole will be available over HTTPS
 
+<strong>Note:</strong> Only supports Ubuntu 16.04
+
 # Instructions:
 
 1. Migrate into the <strong>ApacheGuacamole</strong> Directory
