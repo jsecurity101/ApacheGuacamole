@@ -39,14 +39,26 @@ cp guacamole-properties.xml /etc/guacamole/guacamole-properties.xml
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
 
 cp user-mapping.xml /etc/guacamole/user-mapping.xml
+#Start keystore
+keytool -genkey -alias tomcat -keyalg RSA -keystore /etc/tomcat7/.keystore<<EOF
+guacadmin
+guacadmin
 
-service tomcat7 start
 
+
+
+
+
+yes
+guacadmin
+gaucadmin
+EOF
+#End Keystore
 cp server.xml /etc/tomcat7/server.xml
 
 cp web.xml /etc/tomcat7/web.xml
 
-service tomcat7 restart
+service tomcat7 start
 
 cd ../
 rm -r ApacheGuacamole/
@@ -54,5 +66,5 @@ rm -r ApacheGuacamole/
 echo "Installation is complete!!"
 
 
-echo "Go to http://localhost:8080/guacamole to visit Apache Guacamole"
+echo "Go to https://localhost:8443/guacamole to visit Apache Guacamole"
 
