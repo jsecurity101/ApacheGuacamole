@@ -56,7 +56,7 @@ cp server.xml /etc/tomcat7/server.xml
 
 cp web.xml /etc/tomcat7/web.xml
 
-service tomcat7 start
+service tomcat7 restart
 
 cd ../
 rm -r ApacheGuacamole/
