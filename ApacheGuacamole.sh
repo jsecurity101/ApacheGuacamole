@@ -26,9 +26,7 @@ sudo make install
 
 cd ../
 
-rm -r guacamole-server-0.9.9/
-
-wget http://sourceforge.net/projects/guacamole/files/current/binary/guacamole-0.9.9.war /var/lib/tomcat7
+wget http://sourceforge.net/projects/guacamole/files/current/binary/guacamole-0.9.9.war 
 
 mv guacamole-0.9.9.war /var/lib/tomcat7/webapps/guacamole.war
 
@@ -64,6 +62,8 @@ service tomcat7 start
 
 cd ../
 rm -r ApacheGuacamole/
+
+/usr/local/sbin/guacd &
 
 service tomcat7 restart
 
