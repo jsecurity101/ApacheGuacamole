@@ -56,10 +56,12 @@ cp server.xml /etc/tomcat7/server.xml
 
 cp web.xml /etc/tomcat7/web.xml
 
-service tomcat7 restart
+service tomcat7 start
 
 cd ../
 rm -r ApacheGuacamole/
+
+service tomcat7 restart
 
 echo "Installation is complete!!"
 
