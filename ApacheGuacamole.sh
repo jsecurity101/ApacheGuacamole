@@ -24,6 +24,8 @@ sudo make
 
 sudo make install
 
+cd ../
+
 rm -r guacamole-server-0.9.9/
 
 wget http://sourceforge.net/projects/guacamole/files/current/binary/guacamole-0.9.9.war /var/lib/tomcat7
