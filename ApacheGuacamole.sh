@@ -34,11 +34,11 @@ mkdir /usr/share/tomcat7/.guacamole
 
 mkdir /etc/guacamole/
 
-cp /configs/guacamole.properties /etc/guacamole/guacamole.properties
+cp guacamole.properties /etc/guacamole/guacamole.properties
 
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
 
-cp /configs/user-mapping.xml /etc/guacamole/user-mapping.xml
+cp user-mapping.xml /etc/guacamole/user-mapping.xml
 #Start keystore
 keytool -genkey -alias tomcat -keyalg RSA -keystore /etc/tomcat7/.keystore<<EOF
 guacadmin
@@ -54,9 +54,9 @@ guacadmin
 gaucadmin
 EOF
 #End Keystore
-cp /configs/server.xml /etc/tomcat7/server.xml
+cp server.xml /etc/tomcat7/server.xml
 
-cp /configs/web.xml /etc/tomcat7/web.xml
+cp web.xml /etc/tomcat7/web.xml
 
 service tomcat7 start
 
