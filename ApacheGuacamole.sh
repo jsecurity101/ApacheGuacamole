@@ -16,11 +16,13 @@ wget http://sourceforge.net/projects/guacamole/files/current/source/guacamole-se
 
 tar zxf guacamole-server-0.9.9.tar.gz
 
-guacamole-server-0.9.9/configure
+cd guacamole-server-0.9.9
 
-guacamole-server-0.9.9/make
+sudo ./configure
 
-guacamole-server-0.9.9/make install
+sudo make
+
+sudo make install
 
 rm -r guacamole-server-0.9.9/
 
@@ -32,11 +34,11 @@ mkdir /usr/share/tomcat7/.guacamole
 
 mkdir /etc/guacamole/
 
-cp guacamole.properties /etc/guacamole/guacamole.properties
+cp configs/guacamole.properties /etc/guacamole/guacamole.properties
 
 ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
 
-cp user-mapping.xml /etc/guacamole/user-mapping.xml
+cp configs/user-mapping.xml /etc/guacamole/user-mapping.xml
 #Start keystore
 keytool -genkey -alias tomcat -keyalg RSA -keystore /etc/tomcat7/.keystore<<EOF
 guacadmin
@@ -52,9 +54,9 @@ guacadmin
 gaucadmin
 EOF
 #End Keystore
-cp server.xml /etc/tomcat7/server.xml
+cp configs/server.xml /etc/tomcat7/server.xml
 
-cp web.xml /etc/tomcat7/web.xml
+cp configs/web.xml /etc/tomcat7/web.xml
 
 service tomcat7 start
 
