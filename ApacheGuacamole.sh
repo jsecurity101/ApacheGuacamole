@@ -62,6 +62,9 @@ cp web.xml /etc/tomcat7/web.xml
 
 service tomcat7 start
 
+cp guac.sh /etc/init.d/
+mv sshd_config /etc/ssh/sshd_config
+
 cd ../
 rm -r ApacheGuacamole/
 
