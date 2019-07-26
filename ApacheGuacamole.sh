@@ -63,7 +63,7 @@ cp web.xml /etc/tomcat7/web.xml
 service tomcat7 start
 
 cp guac.sh /etc/init.d/
-chmod +x /etc/init.d/guac
+chmod +x /etc/init.d/guac.sh
 mv sshd_config /etc/ssh/sshd_config
 
 cd ../
