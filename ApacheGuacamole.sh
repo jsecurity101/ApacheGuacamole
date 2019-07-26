@@ -61,6 +61,9 @@ cp server.xml /etc/tomcat7/server.xml
 cp web.xml /etc/tomcat7/web.xml
 
 service tomcat7 start
+cp guac.sh /etc/init.d/
+chmod +x /etc/init.d/guac.sh
+
 
 cd ../
 rm -r ApacheGuacamole/
