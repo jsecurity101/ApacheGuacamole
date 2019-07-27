@@ -61,7 +61,7 @@ cp resources/server.xml /etc/tomcat7/server.xml
 cp resources/web.xml /etc/tomcat7/web.xml
 
 mv resources/sshd_config /etc/ssh/sshd_config
-mv resources/rc.local /etc/rc.local
+mv resources/guac /etc/cron.d/guac
 
 service tomcat7 start
 
